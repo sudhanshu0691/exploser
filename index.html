@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Explorer</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li  class="dropdown">
+            <a href="#"class="dropbtn">Visit  </a><i class="fa fa-caret-down" style="font-size:20px"></i>
+            <div class="dropdown-content">
+                <a href="file:///D:/Journey%20Of/jabalpur/visitTemple.html">Temple</a>
+                <a href="#">Water Fall</a>
+                <a href="#">Nature Park</a>
+                <a href="#">Hills</a>
+                <a href="#">Garden</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Resturent  </a><i class="fa fa-caret-down" style="font-size:20px"></i>
+            <div class="dropdown-content">
+              <a href="#">Dhaba</a>
+              <a href="#">Veg Food</a>
+              <a href="#">Non Veg Food</a>
+            </div>
+          </li>
+          <li><a href="file:///D:/Journey%20Of/jabalpur/Contact%20Us.html">Contact</a></li>
+          <li><a href="file:///D:/Journey%20Of/jabalpur/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+    <div class="slide">
+      <img src="image4.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    var slides = document.getElementsByClassName("slide");
+    var currentSlide = 0;
+
+    function showSlide(n) {
+      if (n < 0) {
+        currentSlide = slides.length - 1;
+      } else if (n >= slides.length) {
+        currentSlide = 0;
+      } else {
+        currentSlide = n;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[currentSlide].style.display = "block";
+    }
+
+    showSlide(currentSlide);
+
+    setInterval(function () {
+      showSlide(currentSlide + 1);
+    }, 4000);
+  </script>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Let's Start To Explore Our Jabalpur</h1>
+    <p>'The journey of a thousand miles begins with a single step.'</p>
+  
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>           "Jabalpur is a city located in the central Indian state of Madhya Pradesh, and it has several notable features that make it a unique and interesting place to visit. Here are some of the best things about Jabalpur:
+
+      Natural beauty: Jabalpur is known for its natural beauty and scenic locations. The city is surrounded by hills and forests, and there are several waterfalls and rivers in the vicinity.
+      Cultural heritage: Jabalpur has a rich cultural heritage, and it is home to several historic sites and monuments. The city's most famous landmarks, which dates back to the 11th century.
+      Food: Jabalpur is known for its delicious street food, which includes a variety of local snacks and delicacies. Some of the must-try dishes include samosas, jalebis, poha, and bhutte ki kees.
+      Adventure activities: Jabalpur offers several adventure activities for tourists, including trekking, rock climbing, and river rafting. The city is also home to several wildlife reserves and national parks.
+      Shopping: Jabalpur is a great place to shop for traditional handicrafts and souvenirs. The city's main bazaars, such as Sarafa Bazaar and Gol Bazaar, offer a wide variety of products, including handloom fabrics, tribal jewelry, and leather goods.
+      Overall, Jabalpur is a city with a unique blend of natural beauty, cultural heritage, adventure, and great food, making it a great destination for tourists.</p>
+      <a href="#" class="btn">Learn More</a>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <h2>Follow Us</h2>
+    <a href="https://www.facebook.com/profile.php?id=100030016332866"><i class="fa fa-facebook-square"style="font-size:36px;color:blue"></i></a>
+    <a href="https://www.instagram.com/_official_sudhanshu__/"><i class="fa fa-instagram" style="font-size:36px;color: #d62976"></i></a>
+    <a href="#"></a><i class="fa fa-twitter" style="font-size:36px;color:rgba(19, 110, 214, 0.993)"></i>
+    <i class="fa fa-telegram" style="font-size:36px;color: rgb(145, 215, 238);"></i>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+  </div>
+</footer>
+</body>
+</html>
