@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Restaurants - Jabalpur Explorer</title>
+    <meta name="description" content="Discover the best restaurants, dhabas, and hotels in Jabalpur with detailed food information and reviews.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/food.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Jabalpur Explorer</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="places.html" class="nav-link">Places</a>
+                <a href="food.html" class="nav-link active">Food</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Food & Restaurants in Jabalpur</h1>
+            <p>Discover the best dining experiences with detailed information and reviews</p>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section class="food-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>All Food Places</h2>
+                <p>Filter and explore restaurants, dhabas, and hotels by type, cuisine, and price</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="food-type-filter">Food Type:</label>
+                    <select id="food-type-filter">
+                        <option value="all">All Types</option>
+                        <option value="veg">Vegetarian</option>
+                        <option value="non-veg">Non-Vegetarian</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="establishment-filter">Establishment:</label>
+                    <select id="establishment-filter">
+                        <option value="all">All Places</option>
+                        <option value="restaurant">Restaurants</option>
+                        <option value="dhaba">Dhabas</option>
+                        <option value="hotel">Hotels</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="cuisine-filter">Cuisine:</label>
+                    <select id="cuisine-filter">
+                        <option value="all">All Cuisines</option>
+                        <option value="indian">Indian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="continental">Continental</option>
+                        <option value="fast-food">Fast Food</option>
+                        <option value="traditional">Traditional</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-sort">Sort by:</label>
+                    <select id="price-sort">
+                        <option value="name">Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="search-filter">Search:</label>
+                    <input type="text" id="search-filter" placeholder="Search restaurants...">
+                </div>
+            </div>
+
+            <div class="food-grid" id="food-grid">
+                <!-- Food places will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jabalpur Explorer</h3>
+                    <p>Your complete guide to exploring the beautiful city of Jabalpur, Madhya Pradesh.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">Places</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Food Categories</h3>
+                    <ul>
+                        <li><a href="#" data-food-type="veg">Vegetarian</a></li>
+                        <li><a href="#" data-food-type="non-veg">Non-Vegetarian</a></li>
+                        <li><a href="#" data-food-type="both">Both</a></li>
+                        <li><a href="#" data-establishment="dhaba">Dhabas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jabalpur Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/food.js"></script>
+</body>
+</html> 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places - Jabalpur Explorer</title>
+    <meta name="description" content="Explore all tourist places in Jabalpur with detailed information, categories, and locations.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/places.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Jabalpur Explorer</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="places.html" class="nav-link active">Places</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Tourist Places in Jabalpur</h1>
+            <p>Discover the best destinations with detailed information and categories</p>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section class="places-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>All Tourist Places</h2>
+                <p>Filter and explore places by category, religion, or location</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="Nature">Nature</option>
+                        <option value="Waterfall">Waterfall</option>
+                        <option value="Historical">Historical</option>
+                        <option value="Temple">Temple</option>
+                        <option value="Mosque">Mosque</option>
+                        <option value="Jain Temple">Jain Temple</option>
+                        <option value="Church">Church</option>
+                        <option value="Gurudwara">Gurudwara</option>
+                        <option value="Buddhist Site">Buddhist Site</option>
+                        <option value="City">City</option>
+                        <option value="Geological Wonder">Geological Wonder</option>
+                        <option value="Leisure">Leisure</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="religion-filter">Religion:</label>
+                    <select id="religion-filter">
+                        <option value="all">All Religions</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Muslim">Muslim</option>
+                        <option value="Jain">Jain</option>
+                        <option value="Christian">Christian</option>
+                        <option value="Sikh">Sikh</option>
+                        <option value="Buddhist">Buddhist</option>
+                        <option value="—">No Religion</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location-filter">Location:</label>
+                    <select id="location-filter">
+                        <option value="all">All Locations</option>
+                        <option value="Bhedaghat">Bhedaghat</option>
+                        <option value="Madan Mahal">Madan Mahal</option>
+                        <option value="Tilwara">Tilwara</option>
+                        <option value="Gwarighat">Gwarighat</option>
+                        <option value="Napier Town">Napier Town</option>
+                        <option value="Sadar">Sadar</option>
+                        <option value="Wright Town">Wright Town</option>
+                        <option value="Civil Lines">Civil Lines</option>
+                        <option value="Adhartal">Adhartal</option>
+                        <option value="Gorakhpur">Gorakhpur</option>
+                        <option value="Bargi">Bargi</option>
+                        <option value="Dumna">Dumna</option>
+                        <option value="Tewar">Tewar</option>
+                        <option value="Kachnar City">Kachnar City</option>
+                        <option value="Pisanhari Hill">Pisanhari Hill</option>
+                        <option value="Ghamapur">Ghamapur</option>
+                        <option value="Ranjhi">Ranjhi</option>
+                        <option value="Saliwada">Saliwada</option>
+                        <option value="Vijay Nagar">Vijay Nagar</option>
+                        <option value="South Civil Lines">South Civil Lines</option>
+                        <option value="Kotwali">Kotwali</option>
+                        <option value="Civic Centre">Civic Centre</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="search-filter">Search:</label>
+                    <input type="text" id="search-filter" placeholder="Search places...">
+                </div>
+            </div>
+
+            <div class="places-grid" id="places-grid">
+                <!-- Places will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jabalpur Explorer</h3>
+                    <p>Your complete guide to exploring the beautiful city of Jabalpur, Madhya Pradesh.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">Places</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#" data-category="Temple">Temples</a></li>
+                        <li><a href="#" data-category="Nature">Nature</a></li>
+                        <li><a href="#" data-category="Historical">Historical</a></li>
+                        <li><a href="#" data-category="Waterfall">Waterfalls</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jabalpur Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/places.js"></script>
+</body>
+</html> 
