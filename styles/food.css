@@ -1,7 +1,7 @@
 /* Food Page Specific Styles */
 
 .page-hero {
-    background: linear-gradient(135deg, var(--accent-color), #f97316);
+    background: linear-gradient(rgba(20,30,40,0.55), rgba(20,30,40,0.55)), url('../assests/images/food.jpg') center/cover no-repeat;
     color: white;
     padding: 8rem 0 4rem;
     text-align: center;

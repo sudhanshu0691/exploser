@@ -16,28 +16,38 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/places.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">Jabalpur Explorer</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="places.html" class="nav-link active">Places</a>
-                <a href="food.html" class="nav-link">Food</a>
-                <a href="index.html#about" class="nav-link">About</a>
-                <a href="index.html#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home nav-icon"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="places.html" class="nav-item active">
+                <i class="fas fa-map-marked-alt nav-icon"></i>
+                <span class="nav-text">Places</span>
+            </a>
+            <a href="food.html" class="nav-item">
+                <i class="fas fa-utensils nav-icon"></i>
+                <span class="nav-text">Food</span>
+            </a>
+            <a href="index.html#about" class="nav-item">
+                <i class="fas fa-info-circle nav-icon"></i>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="index.html#contact" class="nav-item">
+                <i class="fas fa-envelope nav-icon"></i>
+                <span class="nav-text">Contact</span>
+            </a>
         </div>
+        <div id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="nav-menu" class="nav-menu"></div>
     </nav>
 
     <!-- Hero Section -->
@@ -165,6 +175,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
     <script src="js/places.js"></script>
 </body>
 </html> 

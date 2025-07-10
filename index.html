@@ -16,35 +16,41 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Jabalpur Explorer</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="places.html" class="nav-link">Places</a>
-                <a href="food.html" class="nav-link">Food</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="#home" class="nav-item active">
+                <i class="fas fa-home nav-icon"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="places.html" class="nav-item">
+                <i class="fas fa-map-marked-alt nav-icon"></i>
+                <span class="nav-text">Places</span>
+            </a>
+            <a href="food.html" class="nav-item">
+                <i class="fas fa-utensils nav-icon"></i>
+                <span class="nav-text">Food</span>
+            </a>
+            <a href="#about" class="nav-item">
+                <i class="fas fa-info-circle nav-icon"></i>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="#contact" class="nav-item">
+                <i class="fas fa-envelope nav-icon"></i>
+                <span class="nav-text">Contact</span>
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
-            <div class="hero-slide active" style="background-image: url('https://www.mptourism.com/images/poi/bhedaghat-marble-rocks-jabalpur.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('https://www.mptourism.com/images/poi/dhuandhar-falls-jabalpur.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('https://www.mptourism.com/images/poi/madan-mahal-fort-jabalpur.jpg')"></div>
+            <div class="hero-slide active" style="background-image: url('assests/images/i love jbp.png')"></div>
+            <div class="hero-slide" style="background-image: url('assests/images/Kacharnar city.png')"></div>
+            <div class="hero-slide" style="background-image: url('assests/images/Marble Rocks Jabalpur.jpg')"></div>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">Discover Jabalpur</h1>
@@ -108,7 +114,7 @@
                     <p>Jabalpur mein har season ka apna charm hai. Monsoon mein waterfalls, winter mein pleasant weather, aur summer mein adventure activities enjoy kar sakte hain.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://www.mptourism.com/images/poi/bhedaghat-marble-rocks-jabalpur.jpg" alt="Jabalpur City">
+                    <img src="/assests/images/about jbp.jpeg" alt="Jabalpur City">
                 </div>
             </div>
         </div>
@@ -189,15 +195,8 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
     <script>
-        // Mobile Navigation Toggle
-        const navToggle = document.getElementById('nav-toggle');
-        const navMenu = document.getElementById('nav-menu');
-
-        navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
 
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-link').forEach(link => {

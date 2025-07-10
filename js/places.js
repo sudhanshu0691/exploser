@@ -36,7 +36,7 @@ const placesData = [
         location: "Along Narmada River",
         description: "Marble Rocks Bhedaghat mein Narmada River ke dono sides par 100-feet tall white marble ke cliffs hain. Boat ride through these rocks ek unforgettable experience hai. Sunset time par ye rocks golden color mein chamakte hain.",
         highlights: "100-ft tall marble cliffs",
-        image: "https://www.mptourism.com/images/poi/marble-rocks-bhedaghat-jabalpur.jpg",
+        image: "assests/images/Marble Rocks Jabalpur.jpg",
         bestTime: "October to March",
         entryFee: "₹100-300",
         mapLink: "https://maps.google.com/?q=Marble+Rocks+Bhedaghat"
@@ -495,6 +495,97 @@ const placesData = [
         bestTime: "Year round",
         entryFee: "Free",
         mapLink: "https://maps.google.com/?q=Samdariya+Mall+South+Civil+Lines+Jabalpur"
+    },
+    {
+        id: 39,
+        name: "Balancing Rock",
+        category: "Natural Rock",
+        religion: "—",
+        location: "Madan Mahal area",
+        description: "A naturally balanced rock formation in Madan Mahal area.",
+        highlights: "Rock balanced naturally",
+        image: "https://via.placeholder.com/400x250?text=Balancing+Rock",
+        bestTime: "Year round",
+        entryFee: "Free",
+        mapLink: "https://maps.google.com/?q=Balancing+Rock+Madan+Mahal+Jabalpur"
+    },
+    {
+        id: 40,
+        name: "Dumna Nature Reserve",
+        category: "Eco Park",
+        religion: "—",
+        location: "Airport Road",
+        description: "Nature reserve with safari, toy train, and lake.",
+        highlights: "Safari, toy train, lake",
+        image: "https://via.placeholder.com/400x250?text=Dumna+Nature+Reserve",
+        bestTime: "October to March",
+        entryFee: "₹50-100",
+        mapLink: "https://maps.google.com/?q=Dumna+Nature+Reserve+Airport+Road+Jabalpur"
+    },
+    {
+        id: 41,
+        name: "Bargi Dam",
+        category: "Dam / Lake",
+        religion: "—",
+        location: "Bargi",
+        description: "Dam and lake with boating and birdwatching.",
+        highlights: "Boating, birdwatching",
+        image: "https://via.placeholder.com/400x250?text=Bargi+Dam",
+        bestTime: "October to March",
+        entryFee: "₹100-300",
+        mapLink: "https://maps.google.com/?q=Bargi+Dam+Bargi+Jabalpur"
+    },
+    {
+        id: 42,
+        name: "Tilwara Ghat",
+        category: "Ghat",
+        religion: "Hindu",
+        location: "Tilwara",
+        description: "Ghat where Gandhi’s ashes were immersed.",
+        highlights: "Gandhi’s ashes immersed here",
+        image: "https://via.placeholder.com/400x250?text=Tilwara+Ghat",
+        bestTime: "Year round",
+        entryFee: "Free",
+        mapLink: "https://maps.google.com/?q=Tilwara+Ghat+Jabalpur"
+    },
+    {
+        id: 43,
+        name: "Gwarighat",
+        category: "Ghat + Aarti",
+        religion: "Hindu/Sikh",
+        location: "Gwarighat",
+        description: "Riverfront ghat with evening aarti.",
+        highlights: "Evening aarti, riverfront",
+        image: "https://via.placeholder.com/400x250?text=Gwarighat",
+        bestTime: "Year round",
+        entryFee: "Free",
+        mapLink: "https://maps.google.com/?q=Gwarighat+Jabalpur"
+    },
+    {
+        id: 44,
+        name: "Kachnar City Shiva Temple",
+        category: "Temple",
+        religion: "Hindu",
+        location: "Kachnar City",
+        description: "Temple with 76-ft Shiva statue.",
+        highlights: "76-ft Shiva statue",
+        image: "https://via.placeholder.com/400x250?text=Kachnar+City+Shiva+Temple",
+        bestTime: "Year round",
+        entryFee: "Free",
+        mapLink: "https://maps.google.com/?q=Kachnar+City+Shiva+Temple+Jabalpur"
+    },
+    {
+        id: 45,
+        name: "Chausath Yogini Temple",
+        category: "Temple",
+        religion: "Hindu",
+        location: "Bhedaghat",
+        description: "10th century hilltop Durga temple.",
+        highlights: "10th century hilltop Durga temple",
+        image: "https://via.placeholder.com/400x250?text=Chausath+Yogini+Temple",
+        bestTime: "October to March",
+        entryFee: "Free",
+        mapLink: "https://maps.google.com/?q=Chausath+Yogini+Temple+Bhedaghat+Jabalpur"
     }
 ];
 
@@ -659,4 +750,6 @@ window.JabalpurPlaces = {
     placesData,
     filterPlaces,
     showPlaceDetails
-}; 
+};
+
+renderPlaces();
