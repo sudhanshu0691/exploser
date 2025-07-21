@@ -1,16 +1,15 @@
 // Places Page JavaScript - Complete Tourist Places Data
 
 // Complete places data with all 38 locations
-const placesData = [
+let placesData = [
     {
         id: 1,
         name: "Bhedaghat",
         category: "Nature",
-        religion: "—",
         location: "Bhedaghat",
         description: "Bhedaghat Jabalpur ka sabse famous tourist destination hai. Yahan par Marble Rocks aur Dhuandhar Falls dono hain. Narmada River ke dono sides par white marble ke cliffs hain jo boat ride ke time bahut beautiful dikhte hain. Best time to visit: October to March.",
         highlights: "Marble Rocks, boat ride on Narmada",
-        image: "https://www.mptourism.com/images/poi/bhedaghat-marble-rocks-jabalpur.jpg",
+        image: "assests/images/bhedaghat.jpg",
         bestTime: "October to March",
         entryFee: "₹50-200",
         mapLink: "https://maps.google.com/?q=Bhedaghat+Jabalpur"
@@ -19,11 +18,10 @@ const placesData = [
         id: 2,
         name: "Dhuandhar Falls",
         category: "Waterfall",
-        religion: "—",
         location: "Near Bhedaghat",
         description: "Dhuandhar Falls Narmada River ka smoky cascade hai jo Bhedaghat ke pass hai. Monsoon mein ye waterfall bahut powerful dikhta hai aur smoky mist create karta hai. Boat ride bhi available hoti hai jo waterfall ke pass tak jaati hai.",
         highlights: "Smoky mist waterfall, best in monsoon",
-        image: "https://www.mptourism.com/images/poi/dhuandhar-falls-jabalpur.jpg",
+        image: "assests/images/dhuandhar.jpg",
         bestTime: "July to March",
         entryFee: "₹50-200",
         mapLink: "https://maps.google.com/?q=Dhuandhar+Falls+Jabalpur"
@@ -32,7 +30,6 @@ const placesData = [
         id: 3,
         name: "Marble Rocks",
         category: "Nature",
-        religion: "—",
         location: "Along Narmada River",
         description: "Marble Rocks Bhedaghat mein Narmada River ke dono sides par 100-feet tall white marble ke cliffs hain. Boat ride through these rocks ek unforgettable experience hai. Sunset time par ye rocks golden color mein chamakte hain.",
         highlights: "100-ft tall marble cliffs",
@@ -45,11 +42,10 @@ const placesData = [
         id: 4,
         name: "Madan Mahal Fort",
         category: "Historical",
-        religion: "—",
         location: "Madan Mahal",
         description: "Madan Mahal Fort 11th century ka historical fort hai jo Gond dynasty ne banaya tha. Hilltop par situated ye fort city ka panoramic view deta hai. Architecture lovers ke liye perfect destination hai aur history buffs ke liye bhi interesting hai.",
         highlights: "Ancient fort with panoramic views",
-        image: "https://www.mptourism.com/images/poi/madan-mahal-fort-jabalpur.jpg",
+        image: "assests/images/Madan Mahal.jpg",
         bestTime: "October to March",
         entryFee: "₹20-50",
         mapLink: "https://maps.google.com/?q=Madan+Mahal+Fort+Jabalpur"
@@ -58,11 +54,10 @@ const placesData = [
         id: 5,
         name: "Balancing Rock",
         category: "Geological Wonder",
-        religion: "—",
         location: "Near Madan Mahal",
         description: "Balancing Rock ek natural geological wonder hai jo Madan Mahal ke pass hai. Ye rock naturally dusre rock par balanced hai aur gravity ke against stand karta hai. Photography ke liye perfect spot hai.",
         highlights: "Rock balanced naturally on another",
-        image: "https://www.mptourism.com/images/poi/balancing-rock-jabalpur.jpg",
+        image: "assests/images/balancing rock.jpg",
         bestTime: "Year round",
         entryFee: "Free",
         mapLink: "https://maps.google.com/?q=Balancing+Rock+Madan+Mahal+Jabalpur"
@@ -71,11 +66,10 @@ const placesData = [
         id: 6,
         name: "Dumna Nature Reserve",
         category: "Nature",
-        religion: "—",
         location: "Dumna area",
         description: "Dumna Nature Reserve ek wildlife park hai jo eco-tourism ke liye famous hai. Yahan par toy train, deer park, aur various wildlife species hain. Family ke saath picnic ke liye perfect destination hai.",
         highlights: "Eco-tourism, toy train, deer park",
-        image: "https://www.mptourism.com/images/poi/dumna-nature-reserve-jabalpur.jpg",
+        image: "assests/images/Dumna Nature.jpg",
         bestTime: "October to March",
         entryFee: "₹50-100",
         mapLink: "https://maps.google.com/?q=Dumna+Nature+Reserve+Jabalpur"
@@ -84,11 +78,10 @@ const placesData = [
         id: 7,
         name: "Bargi Dam",
         category: "Leisure",
-        religion: "—",
         location: "Bargi",
         description: "Bargi Dam Narmada River par bana hua dam hai jo boating, birdwatching, aur sunset views ke liye famous hai. Water sports activities bhi available hain. Peaceful environment mein nature enjoy karne ke liye perfect hai.",
         highlights: "Boating, birdwatching, sunset views",
-        image: "https://www.mptourism.com/images/poi/bargi-dam-jabalpur.jpg",
+        image: "assests/images/Bargi Dam.jpg",
         bestTime: "October to March",
         entryFee: "₹100-300",
         mapLink: "https://maps.google.com/?q=Bargi+Dam+Jabalpur"
@@ -97,7 +90,6 @@ const placesData = [
         id: 8,
         name: "Tilwara Ghat",
         category: "Historical",
-        religion: "—",
         location: "Tilwara",
         description: "Tilwara Ghat Narmada River ka peaceful ghat hai jo Gandhi ji se associated hai. Yahan par park aur ghat dono hain. Morning walk aur evening stroll enjoy kar sakte hain. Historical significance bhi hai.",
         highlights: "Gandhi association, park & ghat",
@@ -110,7 +102,6 @@ const placesData = [
         id: 9,
         name: "Gwarighat",
         category: "Leisure",
-        religion: "Hindu",
         location: "Gwarighat",
         description: "Gwarighat Narmada River ka spiritual ghat hai jahan Narmada Aarti hoti hai. Hindu aur Sikh dono communities ke liye important hai. Peaceful riverside environment mein spiritual experience milta hai.",
         highlights: "Narmada Aarti, peaceful riverside",
@@ -123,7 +114,6 @@ const placesData = [
         id: 10,
         name: "Kachnar City Shiva Temple",
         category: "Temple",
-        religion: "Hindu",
         location: "Kachnar City",
         description: "Kachnar City Shiva Temple mein 76-feet tall Lord Shiva ki statue hai jo bahut impressive hai. Temple campus clean aur peaceful hai. Shiva devotees ke liye must-visit destination hai.",
         highlights: "76-ft Lord Shiva statue",
@@ -136,7 +126,6 @@ const placesData = [
         id: 11,
         name: "Chausath Yogini Temple",
         category: "Temple",
-        religion: "Hindu",
         location: "Bhedaghat Hilltop",
         description: "Chausath Yogini Temple 10th century ka ancient temple hai jo 64 yoginis ko samarpit hai. Bhedaghat hilltop par situated ye temple circular architecture ke liye famous hai. Spiritual seekers ke liye perfect hai.",
         highlights: "10th-century, 64 Yogini idols",
@@ -149,7 +138,6 @@ const placesData = [
         id: 12,
         name: "Tripur Sundari Temple",
         category: "Temple",
-        religion: "Hindu",
         location: "Tewar",
         description: "Tripur Sundari Temple Durga Maa ka temple hai jo Tewar mein situated hai. Navratri ke time yahan bada fair lagta hai. Temple architecture beautiful hai aur spiritual environment hai.",
         highlights: "Durga temple, Navratri fair",
@@ -162,7 +150,6 @@ const placesData = [
         id: 13,
         name: "Gupteshwar Mahadev Temple",
         category: "Temple",
-        religion: "Hindu",
         location: "Tilwara Ghat area",
         description: "Gupteshwar Mahadev Temple ek cave temple hai jo Lord Shiva ko samarpit hai. Tilwara Ghat area mein situated ye temple natural cave mein bana hua hai. Unique architecture ke liye famous hai.",
         highlights: "Cave of Lord Shiva",
@@ -175,7 +162,6 @@ const placesData = [
         id: 14,
         name: "Hanuman Tal Mandir",
         category: "Temple",
-        religion: "Hindu",
         location: "Hanuman Tal",
         description: "Hanuman Tal Mandir ek lake ke pass situated temple hai jo Hanuman ji ko samarpit hai. Lake ke beautiful view ke saath spiritual environment milta hai. Morning aur evening aarti bahut peaceful hoti hai.",
         highlights: "Temple by the lake",
@@ -188,7 +174,6 @@ const placesData = [
         id: 15,
         name: "Mata Narmada Mandir",
         category: "Temple",
-        religion: "Hindu",
         location: "Gwarighat",
         description: "Mata Narmada Mandir Narmada River ke bank par situated holy temple hai. River ke beautiful view ke saath spiritual experience milta hai. Narmada Maa ke devotees ke liye important pilgrimage site hai.",
         highlights: "On riverbank, holy temple",
@@ -201,7 +186,6 @@ const placesData = [
         id: 16,
         name: "Ram Mandir",
         category: "Temple",
-        religion: "Hindu",
         location: "Gorakhpur area",
         description: "Ram Mandir local devotion ka important center hai. Temple architecture traditional hai aur spiritual environment hai. Local people yahan daily prayers ke liye aate hain.",
         highlights: "Local devotion site",
@@ -214,7 +198,6 @@ const placesData = [
         id: 17,
         name: "Radha Krishna Mandir",
         category: "Temple",
-        religion: "Hindu",
         location: "Napier Town",
         description: "Radha Krishna Mandir spiritual gatherings ka center hai. Temple campus clean aur peaceful hai. Devotees yahan spiritual activities ke liye aate hain.",
         highlights: "Spiritual gatherings",
@@ -227,7 +210,6 @@ const placesData = [
         id: 18,
         name: "Jama Masjid",
         category: "Mosque",
-        religion: "Muslim",
         location: "Madan Mahal",
         description: "Jama Masjid Madan Mahal area ka historic mosque hai. Islamic architecture ka beautiful example hai. Muslim community ke liye important religious site hai.",
         highlights: "Historic mosque",
@@ -240,7 +222,6 @@ const placesData = [
         id: 19,
         name: "Masjid-e-Azam",
         category: "Mosque",
-        religion: "Muslim",
         location: "Napier Town",
         description: "Masjid-e-Azam Napier Town ka main mosque hai. Friday prayers aur Eid celebrations ke liye famous hai. Large congregation accommodate kar sakta hai.",
         highlights: "Friday & Eid prayers",
@@ -253,7 +234,6 @@ const placesData = [
         id: 20,
         name: "Masjid Bilal",
         category: "Mosque",
-        religion: "Muslim",
         location: "Sadar",
         description: "Masjid Bilal Sadar area ka community mosque hai. Local Muslim community ke gatherings ke liye important center hai. Peaceful environment hai.",
         highlights: "Community gatherings",
@@ -266,7 +246,6 @@ const placesData = [
         id: 21,
         name: "Moti Masjid",
         category: "Mosque",
-        religion: "Muslim",
         location: "Near Kotwali",
         description: "Moti Masjid ek small aur peaceful mosque hai jo Kotwali ke pass situated hai. Local Muslim community ke daily prayers ke liye important hai.",
         highlights: "Small, peaceful mosque",
@@ -279,7 +258,6 @@ const placesData = [
         id: 22,
         name: "Pisanhari ki Madiya",
         category: "Jain Temple",
-        religion: "Jain",
         location: "Pisanhari Hill",
         description: "Pisanhari ki Madiya ek Jain temple hai jo ek woman devotee ne banaya tha. Hilltop par situated hai aur beautiful view deta hai. Jain community ka important religious site hai.",
         highlights: "Built by woman devotee, hilltop view",
@@ -292,7 +270,6 @@ const placesData = [
         id: 23,
         name: "Mahavir Swami Jain Mandir",
         category: "Jain Temple",
-        religion: "Jain",
         location: "Wright Town",
         description: "Mahavir Swami Jain Mandir Wright Town ka community temple hai. Jain community ke daily prayers aur spiritual activities ke liye important center hai.",
         highlights: "Community temple",
@@ -305,7 +282,6 @@ const placesData = [
         id: 24,
         name: "Parshwanath Jain Mandir",
         category: "Jain Temple",
-        religion: "Jain",
         location: "Napier Town",
         description: "Parshwanath Jain Mandir ornate carvings ke liye famous hai. Temple campus clean aur well-maintained hai. Jain architecture ka beautiful example hai.",
         highlights: "Ornate carvings, clean campus",
@@ -318,7 +294,6 @@ const placesData = [
         id: 25,
         name: "Shantinath Jain Mandir",
         category: "Jain Temple",
-        religion: "Jain",
         location: "Adhartal",
         description: "Shantinath Jain Mandir spiritual peace ka center hai. Temple environment peaceful hai aur devotees yahan meditation ke liye aate hain.",
         highlights: "Spiritual peace site",
@@ -331,7 +306,6 @@ const placesData = [
         id: 26,
         name: "St. Aloysius Church",
         category: "Church",
-        religion: "Christian",
         location: "Sadar",
         description: "St. Aloysius Church Gothic architecture ka beautiful example hai. Church campus peaceful hai aur Christian community ke liye important religious center hai.",
         highlights: "Gothic architecture",
@@ -344,7 +318,6 @@ const placesData = [
         id: 27,
         name: "St. Paul's Church",
         category: "Church",
-        religion: "Christian",
         location: "Wright Town",
         description: "St. Paul's Church colonial-era design ka example hai. Church architecture historical significance rakhta hai. Christian community ke worship ke liye important hai.",
         highlights: "Colonial-era design",
@@ -357,7 +330,6 @@ const placesData = [
         id: 28,
         name: "Holy Trinity Church",
         category: "Church",
-        religion: "Christian",
         location: "Civil Lines",
         description: "Holy Trinity Church Anglican architecture ka example hai. Church campus beautiful hai aur spiritual environment hai. Christian community ke liye important center hai.",
         highlights: "Anglican architecture",
@@ -370,7 +342,6 @@ const placesData = [
         id: 29,
         name: "St. Thomas Church",
         category: "Church",
-        religion: "Christian",
         location: "Ghamapur",
         description: "St. Thomas Church calm aur spiritual environment provide karta hai. Church campus peaceful hai aur devotees yahan prayers ke liye aate hain.",
         highlights: "Calm and spiritual",
@@ -383,7 +354,6 @@ const placesData = [
         id: 30,
         name: "Evangelical Church",
         category: "Church",
-        religion: "Christian",
         location: "Ranjhi",
         description: "Evangelical Church community events ka center hai. Church local Christian community ke gatherings aur celebrations ke liye important hai.",
         highlights: "Community events",
@@ -396,7 +366,6 @@ const placesData = [
         id: 31,
         name: "Gurudwara Gwarighat Sahib",
         category: "Gurudwara",
-        religion: "Sikh",
         location: "Gwarighat",
         description: "Gurudwara Gwarighat Sahib Narmada ghat ke pass situated hai. Langar service famous hai aur Narmada river ka beautiful view milta hai. Sikh community ka important religious center hai.",
         highlights: "Langar & Narmada ghat view",
@@ -409,7 +378,6 @@ const placesData = [
         id: 32,
         name: "Gurudwara Singh Sabha",
         category: "Gurudwara",
-        religion: "Sikh",
         location: "Sadar",
         description: "Gurudwara Singh Sabha Sadar area ka Sikh religious center hai. Gurpurab celebrations ke time bahut crowded hota hai. Sikh community ke daily prayers ke liye important hai.",
         highlights: "Celebrations on Gurpurab",
@@ -422,7 +390,6 @@ const placesData = [
         id: 33,
         name: "Gurudwara Guru Nanak Darbar",
         category: "Gurudwara",
-        religion: "Sikh",
         location: "Napier Town",
         description: "Gurudwara Guru Nanak Darbar peaceful worship space provide karta hai. Gurudwara campus clean aur spiritual environment hai. Sikh devotees ke liye important center hai.",
         highlights: "Peaceful worship space",
@@ -435,7 +402,6 @@ const placesData = [
         id: 34,
         name: "Deeksha Bhoomi Jabalpur",
         category: "Buddhist Site",
-        religion: "Buddhist",
         location: "Saliwada / Ranjhi",
         description: "Deeksha Bhoomi Jabalpur Dr. Ambedkar se inspired Buddhist site hai. Buddhist community ke liye important pilgrimage site hai. Spiritual environment aur meditation ke liye perfect hai.",
         highlights: "Inspired by Dr. Ambedkar",
@@ -448,7 +414,6 @@ const placesData = [
         id: 35,
         name: "Buddha Vihar",
         category: "Buddhist Site",
-        religion: "Buddhist",
         location: "Civic Centre",
         description: "Buddha Vihar meditation aur Dhamma sessions ke liye famous hai. Buddhist community ke spiritual activities ka center hai. Peaceful environment mein meditation kar sakte hain.",
         highlights: "Meditation, Dhamma sessions",
@@ -461,7 +426,6 @@ const placesData = [
         id: 36,
         name: "Civic Centre",
         category: "City",
-        religion: "—",
         location: "Near Wright Town",
         description: "Civic Centre shopping, street food, aur cafes ka hub hai. Yahan par local street food, cafes, aur shopping options available hain. Evening time par bahut crowded hota hai.",
         highlights: "Street food, cafes, shopping",
@@ -474,7 +438,6 @@ const placesData = [
         id: 37,
         name: "South Avenue Mall",
         category: "City",
-        religion: "—",
         location: "Vijay Nagar",
         description: "South Avenue Mall multiplex aur food court ke liye famous hai. Modern shopping experience provide karta hai. Family entertainment ke liye perfect destination hai.",
         highlights: "Multiplex, food court",
@@ -487,7 +450,6 @@ const placesData = [
         id: 38,
         name: "Samdariya Mall",
         category: "City",
-        religion: "—",
         location: "South Civil Lines",
         description: "Samdariya Mall fashion stores aur cinema ke liye famous hai. Modern shopping experience aur entertainment options provide karta hai. Youth ke liye popular destination hai.",
         highlights: "Fashion stores, cinema",
@@ -496,103 +458,20 @@ const placesData = [
         entryFee: "Free",
         mapLink: "https://maps.google.com/?q=Samdariya+Mall+South+Civil+Lines+Jabalpur"
     },
-    {
-        id: 39,
-        name: "Balancing Rock",
-        category: "Natural Rock",
-        religion: "—",
-        location: "Madan Mahal area",
-        description: "A naturally balanced rock formation in Madan Mahal area.",
-        highlights: "Rock balanced naturally",
-        image: "https://via.placeholder.com/400x250?text=Balancing+Rock",
-        bestTime: "Year round",
-        entryFee: "Free",
-        mapLink: "https://maps.google.com/?q=Balancing+Rock+Madan+Mahal+Jabalpur"
-    },
-    {
-        id: 40,
-        name: "Dumna Nature Reserve",
-        category: "Eco Park",
-        religion: "—",
-        location: "Airport Road",
-        description: "Nature reserve with safari, toy train, and lake.",
-        highlights: "Safari, toy train, lake",
-        image: "https://via.placeholder.com/400x250?text=Dumna+Nature+Reserve",
-        bestTime: "October to March",
-        entryFee: "₹50-100",
-        mapLink: "https://maps.google.com/?q=Dumna+Nature+Reserve+Airport+Road+Jabalpur"
-    },
-    {
-        id: 41,
-        name: "Bargi Dam",
-        category: "Dam / Lake",
-        religion: "—",
-        location: "Bargi",
-        description: "Dam and lake with boating and birdwatching.",
-        highlights: "Boating, birdwatching",
-        image: "https://via.placeholder.com/400x250?text=Bargi+Dam",
-        bestTime: "October to March",
-        entryFee: "₹100-300",
-        mapLink: "https://maps.google.com/?q=Bargi+Dam+Bargi+Jabalpur"
-    },
-    {
-        id: 42,
-        name: "Tilwara Ghat",
-        category: "Ghat",
-        religion: "Hindu",
-        location: "Tilwara",
-        description: "Ghat where Gandhi’s ashes were immersed.",
-        highlights: "Gandhi’s ashes immersed here",
-        image: "https://via.placeholder.com/400x250?text=Tilwara+Ghat",
-        bestTime: "Year round",
-        entryFee: "Free",
-        mapLink: "https://maps.google.com/?q=Tilwara+Ghat+Jabalpur"
-    },
-    {
-        id: 43,
-        name: "Gwarighat",
-        category: "Ghat + Aarti",
-        religion: "Hindu/Sikh",
-        location: "Gwarighat",
-        description: "Riverfront ghat with evening aarti.",
-        highlights: "Evening aarti, riverfront",
-        image: "https://via.placeholder.com/400x250?text=Gwarighat",
-        bestTime: "Year round",
-        entryFee: "Free",
-        mapLink: "https://maps.google.com/?q=Gwarighat+Jabalpur"
-    },
-    {
-        id: 44,
-        name: "Kachnar City Shiva Temple",
-        category: "Temple",
-        religion: "Hindu",
-        location: "Kachnar City",
-        description: "Temple with 76-ft Shiva statue.",
-        highlights: "76-ft Shiva statue",
-        image: "https://via.placeholder.com/400x250?text=Kachnar+City+Shiva+Temple",
-        bestTime: "Year round",
-        entryFee: "Free",
-        mapLink: "https://maps.google.com/?q=Kachnar+City+Shiva+Temple+Jabalpur"
-    },
-    {
-        id: 45,
-        name: "Chausath Yogini Temple",
-        category: "Temple",
-        religion: "Hindu",
-        location: "Bhedaghat",
-        description: "10th century hilltop Durga temple.",
-        highlights: "10th century hilltop Durga temple",
-        image: "https://via.placeholder.com/400x250?text=Chausath+Yogini+Temple",
-        bestTime: "October to March",
-        entryFee: "Free",
-        mapLink: "https://maps.google.com/?q=Chausath+Yogini+Temple+Bhedaghat+Jabalpur"
-    }
+
 ];
+
+// Remove all objects with repeated ids (keep only those ids that appear exactly once)
+const idCounts = placesData.reduce((acc, place) => {
+    acc[place.id] = (acc[place.id] || 0) + 1;
+    return acc;
+}, {});
+placesData = placesData.filter(place => idCounts[place.id] === 1);
 
 // DOM Elements
 const placesGrid = document.getElementById('places-grid');
 const categoryFilter = document.getElementById('category-filter');
-const religionFilter = document.getElementById('religion-filter');
+// REMOVED: const religionFilter = document.getElementById('religion-filter');
 const locationFilter = document.getElementById('location-filter');
 const searchFilter = document.getElementById('search-filter');
 const navToggle = document.getElementById('nav-toggle');
@@ -626,12 +505,11 @@ function renderPlaces(places = placesData) {
     }
 
     placesGrid.innerHTML = places.map(place => `
-        <div class="place-card" data-category="${place.category}" data-religion="${place.religion}" data-location="${place.location}">
+        <div class="place-card" data-category="${place.category}" data-location="${place.location}">
             <div class="place-image">
                 <img src="${place.image}" alt="${place.name}" loading="lazy">
                 <div class="place-badges">
                     <div class="place-category-badge">${place.category}</div>
-                    ${place.religion !== '—' ? `<div class="place-religion-badge">${place.religion}</div>` : ''}
                 </div>
             </div>
             <div class="place-content">
@@ -677,13 +555,12 @@ function renderPlaces(places = placesData) {
 // Filter Places
 function filterPlaces() {
     const category = categoryFilter.value;
-    const religion = religionFilter.value;
+    // REMOVED: const religion = religionFilter.value;
     const location = locationFilter.value;
     const search = searchFilter.value.toLowerCase();
 
     let filteredPlaces = placesData.filter(place => {
         const matchesCategory = category === 'all' || place.category === category;
-        const matchesReligion = religion === 'all' || place.religion === religion;
         const matchesLocation = location === 'all' || place.location === location;
         const matchesSearch = search === '' || 
             place.name.toLowerCase().includes(search) ||
@@ -691,7 +568,7 @@ function filterPlaces() {
             place.highlights.toLowerCase().includes(search) ||
             place.location.toLowerCase().includes(search);
 
-        return matchesCategory && matchesReligion && matchesLocation && matchesSearch;
+        return matchesCategory && matchesLocation && matchesSearch;
     });
 
     renderPlaces(filteredPlaces);
@@ -699,7 +576,7 @@ function filterPlaces() {
 
 // Event Listeners for Filters
 categoryFilter.addEventListener('change', filterPlaces);
-religionFilter.addEventListener('change', filterPlaces);
+// REMOVED: religionFilter.addEventListener('change', filterPlaces);
 locationFilter.addEventListener('change', filterPlaces);
 searchFilter.addEventListener('input', filterPlaces);
 
